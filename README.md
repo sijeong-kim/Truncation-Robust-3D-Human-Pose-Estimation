@@ -2,6 +2,8 @@
 
 This repository summarizes a project on **truncation-robust 3D human pose estimation** with reduced frame flickering in video sequences.
 
+⚠️ Note: This repository contains a project summary only. Due to institutional research policy, full code and dataset access cannot be provided publicly.
+
 ---
 
 ## ✅ Overview
