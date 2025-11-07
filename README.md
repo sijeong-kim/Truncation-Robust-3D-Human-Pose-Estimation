@@ -4,13 +4,10 @@ This repository summarizes a project on **truncation-robust 3D human pose estima
 
 > Due to institutional policy at **KIST (Korea Institute of Science and Technology)**, full code and dataset cannot be released publicly.  
 > Evaluation logs, result summaries, and visual comparisons are available on the project page below:
-
-🔗 **Project Page (Notion):**  
-https://sijeong.notion.site/Truncation-Robust-3D-Human-Pose-Estimation-e20dd73057af447995a6e0d8b61b6ca1
-
 ---
 
 ## ✅ Overview
+
 
 ### 🎯 Goal
 To build a **truncation-robust** and **temporally stable** 3D human pose estimation pipeline from monocular video.
@@ -23,6 +20,13 @@ To build a **truncation-robust** and **temporally stable** 3D human pose estimat
    - **MixSTE**
    - **P-STMO**
 3. Reconstruct 3D pose sequences with reduced flickering and improved stability under truncation.
+
+## 📌 System Pipeline
+
+Image Sequence → MeTRAbs (2D heatmaps)  
+→ Temporal 2D-to-3D Lifting (VideoPose3D / MHFormer / MixSTE / P-STMO)  
+→ Final 3D Pose (reduced flickering, truncation-robust)
+
 
 ### ✅ My Contribution
 ✔ Proposed approach  
@@ -81,6 +85,20 @@ Truncation types:
 | **Ours (MixSTE)**      | **66.1** | **64.8** | **76.8** | **87.5** | **63.7** | **71.78** |
 | **Ours (P-STMO)**      | 125.78 | 93.34 | 100.67 | 157.94 | 89.71 | **113.49** |
 
+## 🔍 Limitations & Future Work
+
+✅ Current model improves robustness under synthetic truncation on Human3.6M.  
+✖  Still relies on accurate 2D keypoint detection  
+→ Future: joint end-to-end 2D+3D training or diffusion-based lifting
+
+✖  Evaluation currently on Human3.6M only  
+→ Future: in-the-wild datasets (3DPW, MuCo-3DHP)
+
+✅ Temporal models reduce flickering  
+✖  But long-term motion consistency can still degrade under heavy occlusion  
+→ Future: transformer-based temporal refinement or trajectory priors
+
+
 **Summary:**  
 ✅ Truncation-robust (lower MPJPE across all occlusion patterns)  
 ✅ More temporally stable (reduced flickering)  
@@ -99,4 +117,8 @@ Truncation types:
 
 ---
 
-### ✅ Done.
+⚠️ Note: This repository contains a project summary only.
+Due to institutional research policy at KIST, full code and dataset access
+cannot be provided publicly.
+Evaluation logs, figures, and comparisons are available upon request.
+
