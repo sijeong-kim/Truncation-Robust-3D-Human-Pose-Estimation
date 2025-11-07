@@ -2,8 +2,6 @@
 
 This repository summarizes a project on **truncation-robust 3D human pose estimation** with reduced frame flickering in video sequences.
 
-> Due to institutional policy at **KIST (Korea Institute of Science and Technology)**, full code and dataset cannot be released publicly.  
-> Evaluation logs, result summaries, and visual comparisons are available on the project page below:
 ---
 
 ## ✅ Overview
@@ -118,7 +116,4 @@ Truncation types:
 ---
 
 ⚠️ Note: This repository contains a project summary only.
-Due to institutional research policy at KIST, full code and dataset access
-cannot be provided publicly.
-Evaluation logs, figures, and comparisons are available upon request.
-
+Due to institutional research policy, full code and dataset access cannot be provided publicly.
