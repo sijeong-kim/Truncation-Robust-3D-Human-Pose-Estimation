@@ -115,7 +115,3 @@ Truncation types:
 - Zhang et al. (CVPR 2022). *MixSTE.*
 - Shan et al. (ECCV 2022). *P-STMO.*
 
----
-
-⚠️ Note: This repository contains a project summary only.
-Due to institutional research policy, full code and dataset access cannot be provided publicly.
